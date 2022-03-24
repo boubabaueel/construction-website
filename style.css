@@ -1,0 +1,302 @@
+#home{ background-image: url(nyc2.jpg);
+background-size: cover;
+background-attachment: fixed;}
+.img-w{display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+grid-gap: 5px;
+}
+.box{padding: 10px;}
+img{width: 100%;
+border-radius: 15px;}
+#service{background: rgba(74, 78, 84,0.5);
+}
+
+
+.ser{color: white;}
+.ser > li{
+    list-style: square;
+    padding: 5px;
+    font-size: large;
+    color: white;
+    margin: 5px 2px 0px 5px;
+}
+#two{color: tomato;
+padding-left: 25%;}
+@media screen and (min-width: 250px) and (max-width: 768px){
+    #service{background-image: url(nyc2.jpg);}
+#menu{
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;}
+
+.bar{ height: 5px;
+    width: 100%;
+    background-color: #22171d;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+#bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+}
+.nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav li a:hover{
+    font-weight: bold;
+}
+.nav li{ list-style: none;
+padding: 16px 0;}
+.nav{
+    padding: 0;
+    margin: 0px 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+/* background menu for mobile */
+.menu-bg, #menu-bar{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.menu-bg{
+z-index: 1;
+width: 0;
+border-radius: 50%;
+height: 0;
+margin: 30px 0 20px 20px;
+background: radial-gradient(circle,#0c0e0b,#1fb157);
+transition: 0.3s ease;
+}
+#menu-bar{
+    z-index: 2;
+}
+.change-bg{
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+}
+
+.change .bar{
+    background-color: white;
+}
+.change #bar1{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+    transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{ opacity: 0;}
+
+.change{display: block;}
+.nav-a,.h1{display: none;}
+/* background menu end */
+
+
+/* below is the home page entire div below heading  */
+.home-box{
+    background: rgba(74, 78, 84,0.7);
+    height: 100%;
+    width: 100%;
+}
+
+/* services button on homepage  */
+.b{
+    padding: 4px 4px 4px 4px;
+    margin: 0px 15px 40px 40px;
+    border-radius: 2px;
+    font-family: poppins;
+    font-weight: 400;
+    border: 2px solid;
+    color:tomato#e94498 ;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    height: 40px;
+    
+    
+}
+.b:hover{
+    box-shadow: 0 5px 50px 0 rgb(35, 75, 30) inset,0 5px 50px 0 rgb(14, 163, 26);
+    text-shadow: 0 0 5px rgb(46, 160, 46), 0 0 5px rgb(29, 141, 35);
+}
+.button{
+    list-style: none;
+    text-decoration: none;
+    margin: 5px 9px 5px 9px;
+    padding: 10px 3px 4px 5px;
+    color: tomato;
+    
+}
+
+/* WE DO ALL ASPECTS OF HOME IMPROVEMENTS  */
+.hp{
+    padding: 40px 0 0 20px;
+    margin: 15px 10px 0 10px; 
+    color: tomato;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.contact{
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    padding-bottom: 20px;
+}
+.serving{color: tomato;}
+
+
+.img{width: 100%;
+margin-top: 20px;}
+.service{color:darkblue;
+text-align: center;}
+.services{ line-height: 2em;
+    }
+#va{color:darkblue}
+
+.veh{ line-height: 2em;
+    text-align: center;
+    list-style: none;
+   }
+    
+   .veh> ul >li{list-style: none;}
+   
+   #co{display: none;}
+
+
+}
+
+
+/*DESKTOP MEDIA QUERY*/
+@media screen and (min-width:769px) {
+    .nav-b{
+        background: gray;
+        text-align: center;
+        margin: 10px 10px 20px 10px;
+        padding: 15px 20px 10px 20px
+    }
+    
+    
+    .nav-b> li{
+        display: inline-block;
+        
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+    }
+    .nav-b li a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+#menu-bar{display: none;}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows:repeat(1,minmax(150px,auto)) ;
+    max-width: 100%;
+    
+}
+#ca{display: none;
+ background: rgba(74, 78, 84,0.7);}
+.wrapper-s{
+    display: grid;
+    grid-gap: 10px;
+    height: 600px;
+    grid-template-columns: repeat(3,3fr) ;
+    grid-template-rows:repeat(2,minmax(150px,auto)) ;
+    max-width: 100%;
+    margin-bottom: 30px;
+    
+    background-image: url(nyc2.jpg);
+    
+}
+#ps{ font-size: larger;
+    line-height: 2em;
+    color: darkblue;
+}
+.service{color:tomato;
+    
+    font-size: 40px;
+}
+    .services{ 
+    grid-column: 1/3;
+    grid-row:1/3;
+    padding: 15px 10px 5px 20px;
+}
+
+/* .veh is list on services page */
+    .veh{line-height: 2em;
+        grid-column: 3/3;
+        grid-row:1/3;
+    padding: 15px 10px 5px 10px;
+    margin: 0px 0px 0px 100px;
+
+    }
+    
+    #va{color:tomato;
+        font-size: 40px;
+    }
+    .veh >ul >li{
+        color:darkblue;
+        list-style: square;
+        font-size: 20px;
+    }
+.home-box{
+    background: rgba(74, 78, 84,0.7);
+    height: 100%;
+    grid-column: 1/5;
+}
+.b{
+    padding: 4px 4px 4px 4px;
+    margin: 0px 15px 40px 40px;
+    border-radius: 2px;
+    font-family: poppins;
+    font-weight: 400;
+    border: 2px solid;
+    color:tomato#e94498 ;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    height: 40px;
+}
+
+#co{ background: rgba(74, 78, 84,0.7);
+padding-right: 30px;
+padding-top: 20px;}
+.b:hover{
+    box-shadow: 0 5px 50px 0 rgb(32, 94, 32) inset,0 5px 50px 0 rgb(148, 148, 31);
+    text-shadow: 0 0 5px yellow, 0 0 5px yellow;
+}
+.button{
+    list-style: none;
+    text-decoration: none;
+    margin: 5px 9px 5px 9px;
+    padding: 10px 3px 4px 5px;
+    color: tomato;
+    
+    
+}
+.h1{color: tomato;
+font-size: 50px;
+padding-left: 10px;}
+
+.h11{display: none;}
+.hp{
+    padding: 40px 0 0 20px;
+    margin: 15px 10px 0 10px; 
+    color: tomato;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contact{
+    grid-column:5/10 ;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+}
+.serving{color: tomato;}
+}
